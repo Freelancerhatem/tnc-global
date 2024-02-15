@@ -6,4 +6,8 @@ export const router = createBrowserRouter([
     path: "/",
     element: <HomeLayout></HomeLayout>,
     },
+    {
+    path: "/user/:id",
+    element: '<HomeLayout></HomeLayout>',
+    },
     ]);

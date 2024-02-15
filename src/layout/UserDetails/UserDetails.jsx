@@ -1,9 +1,9 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useData from "../../Hooks/useData";
 import { useEffect, useState } from "react";
 import bg from '../../assets/image/abt.jpg'
 import { TbSquareRoundedNumber1, TbSquareRoundedNumber2, TbSquareRoundedNumber3, TbSquareRoundedNumber4, TbSquareRoundedNumber5, TbSquareRoundedNumber6, TbSquareRoundedNumber7, TbSquareRoundedNumber8 } from "react-icons/tb";
-
+import { ImCross } from "react-icons/im";
 
 const UserDetails = () => {
     const data = useData();
@@ -25,6 +25,7 @@ const UserDetails = () => {
             <div style={{ backgroundImage: `url(${bg})` }} className="  bg-cover bg-center ">
                 <div className="h-screen w-screen bg-cover bg-center bg-[#062336c6] flex justify-center items-center">
                     <div className="w-[50%] h-[70%] relative bg-[#c7c3c3d5] shadow-xl rounded-md">
+                <Link to={'/'}  className="absolute z-50 top-5 right-5 text-white"><ImCross/></Link>
                         <div className="">
                             <img className="absolute -top-10 left-[calc(50%-40px)] bg-[#062336] rounded-full p-3 w-20 h-20" src={image} alt="" />
                             <h1 className=" relative text-center top-12 w-[20%] rounded-md mx-auto bg-white  text-[#062336]"><span className="font-extrabold">User ID:</span> {username}</h1>

@@ -2,6 +2,7 @@
 import Navbar from "../layout/Navbar/Navbar";
 import DataCards from "../components/DataCards/DataCards";
 import Banner from "../layout/Banner/Banner";
+import Footer from "../components/DataCards/Footer/Footer";
 
 
 const HomeLayout = () => {
@@ -11,7 +12,7 @@ const HomeLayout = () => {
             <Navbar></Navbar>
             <Banner></Banner>
             <DataCards></DataCards>
-            {/* footer */}
+            <Footer></Footer>
         </div>
     );
 };

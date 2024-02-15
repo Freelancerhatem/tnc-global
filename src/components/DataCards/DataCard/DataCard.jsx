@@ -9,9 +9,9 @@ const DataCard = ({ userData }) => {
     return (
         <div onMouseEnter={() => setActive(true)} onMouseLeave={() => setActive(false)} className='relative'>
             <div className={`  bg-white -z-0 py-5 rounded-md shadow-2xl ${active ? '' : ''}`}>
-                <div className={`absolute  w-full left-0 bottom-0    ${active ? ' bg-gradient-to-t from-[#7ba7f3] via-[#7ba7f3]  to-transparent  rounded-md l h-full   duration-500 transition-all  z-10' : 'h-0 transition-all   duration-1000'}`}></div>
+                <div className={`absolute  w-full left-0 bottom-0    ${active ? ' bg-gradient-to-t from-[#7ba7f3] via-[#7ba7f3]  to-transparent  rounded-md l h-full   duration-500 transition-all  z-10' : 'h-0 transition-all   duration-500'}`}></div>
                 <div className='z-30 relative'>
-                    <div className='w-20 h-20 rounded-full mx-auto p-4 my-2  bg-[#7ba7f3]'><img className='w-full  h-full' src={image} alt="" /></div>
+                    <div className={`w-20 h-20 rounded-full mx-auto p-4 my-2  bg-[#7ba7f3] ${active?'bg-white':''}`}><img className={`w-full  h-full ${active?'':''}`} src={image} alt="" /></div>
                     <div className={`text-center text-lg font-semibold ${active?'text-white':''}`}><h2>{firstName} {lastName}</h2></div>
                     <div className={`flex flex-col gap-2 items-center ${active?'text-white':''}`}>
                         <h2>{email} </h2>

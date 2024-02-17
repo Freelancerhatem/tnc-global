@@ -19,19 +19,19 @@ const UserDetails = () => {
         return 'loading'
     }
     else {
-        const { id, firstName, age, birthDate, lastName, height, email, bloodGroup, gender, ssn, university, weight, image, username, phone ,address} = userInfo;
+        const { id, firstName, age, birthDate, lastName, height, email, bloodGroup, gender, ssn, university, weight, image, username, phone, address } = userInfo;
         console.log(userInfo);
         return (
-            <div style={{ backgroundImage: `url(${bg})` }} className="  bg-cover bg-center ">
-                <div className="h-screen w-screen bg-cover bg-center bg-[#062336c6] flex justify-center items-center">
-                    <div className="w-[50%] h-[70%] relative bg-[#c7c3c3d5] shadow-xl rounded-md">
-                <Link to={'/'}  className="absolute z-50 top-5 right-5 text-white"><ImCross/></Link>
+            <div style={{ backgroundImage: `url(${bg})` }} className=" h-screen   bg-cover bg-center ">
+                <div className="h-screen w-screen bg-cover bg-center bg-[#062336c6] flex pt-14 md:pt-0 justify-center md:items-center">
+                    <div className="md:w-[50%] w-[80%] md:h-[70%] relative bg-[#c7c3c3d5] shadow-xl rounded-md">
+                        <Link to={'/'} className="absolute z-50 top-5 right-5 text-white"><ImCross /></Link>
                         <div className="">
                             <img className="absolute -top-10 left-[calc(50%-40px)] bg-[#062336] rounded-full p-3 w-20 h-20" src={image} alt="" />
-                            <h1 className=" relative text-center top-12 w-[20%] rounded-md mx-auto bg-white  text-[#062336]"><span className="font-extrabold">User ID:</span> {username}</h1>
+                            <h1 className=" relative text-center top-12 md:w-[20%] w-1/2 rounded-md mx-auto bg-white  text-[#062336]"><span className="font-extrabold">User ID:</span> {username}</h1>
                         </div>
-                        <div className="h-full w-full absolute top-0 ">
-                            <div className=" w-full h-[calc(100%-80px)] mt-20 grid grid-cols-1 md:grid-cols-2 rounded-b-md bg-green-200">
+                        <div className="h-full  w-full absolute top-0 ">
+                            <div className=" w-full h-[calc(100%-80px)] mt-20  grid grid-cols-1 md:grid-cols-2 rounded-b-md bg-green-200">
                                 <div className="px-5 bg-[#325991] rounded-bl-md">
                                     <h1 className="text-xl font-bold text-center">Personal Information</h1>
                                     <div className="flex text-white items-center gap-1 text-lg"><TbSquareRoundedNumber1 /> <p>Name: {firstName} {lastName}</p>   </div>

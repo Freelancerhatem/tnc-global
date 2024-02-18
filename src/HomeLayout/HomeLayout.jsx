@@ -9,7 +9,7 @@ import About from "../layout/About/About";
 const HomeLayout = () => {
     
     return (
-        <div className="bg-gray-100">
+        <div className="">
             <Navbar></Navbar>
             <Banner></Banner>
             <About></About>

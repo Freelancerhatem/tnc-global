@@ -16,7 +16,8 @@ const DataCards = () => {
 
         return (
             <div className=" bg-[#d5e5fe] mt-20 py-10 z-50">
-                <h1 className="text-center font-bold text-2xl">All User</h1>
+                <h1 className="text-center font-bold text-2xl">Profiles</h1>
+                <p className="text-center">Here is our skilled Profiles.</p>
                 <div data-aos={''} data-aos-duration='1000' className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 py-2">
 
                     {user.slice(0, seeData).map((userData, index) => <DataCard key={index} userData={userData}></DataCard>)}

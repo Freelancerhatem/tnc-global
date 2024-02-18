@@ -51,14 +51,14 @@ const Navbar = () => {
                     <p><FaLinkedin /></p>
                 </div>
             </div>
-            <div className={`h-14 text-white bg-[#062336]  md:px-10 grid grid-cols-3 ${active ? 'translate-y-0 transition-all  duration-700' : '-translate-y-7 transition-all bg-white duration-700'}`}>
+            <div className={`h-14 text-white bg-[#062336]  lg:px-10  grid grid-cols-3 ${active ? 'translate-y-0 transition-all  duration-700' : '-translate-y-7 transition-all bg-white duration-700'}`}>
                 <div className=" flex items-center ">
                     <button onClick={() => setMenuBar(true)} className={`p-2 ${active ? 'text-white' : 'text-[#062336]'}`}>{!menuBar ? <GiHamburgerMenu /> : ''}</button>
                     <h1 className={`md:text-2xl font-bold ${active ? '' : 'text-[#062336]'}`}>Penguin</h1>
                 </div>
-                <div className={`hidden md:flex items-center w-full relative transition-all duration-500 ${active ? '' : 'opacity-0'}`}>
-                    <input required placeholder="search for a user" type="text" className={`w-full h-10 rounded-md  pl-4 border-none outline-none transition-all duration-500 text-black ${active ? '' : 'bg-[#06233622] '}`} />
-                    <button className={`absolute top-4 text-[#7d7d7d] text-2xl  h-5  right-3 ${active ? '' : 'text-[#bebdbd]'}`}><IoSearchOutline/></button>
+                <div className={`hidden md:flex items-center lg:w-full md:w-[70%] relative transition-all duration-500 ${active ? '' : 'opacity-0'}`}>
+                    <input required placeholder="search for a user" type="text" className={`w-full  h-10 rounded-md  pl-4 border-none outline-none transition-all duration-500 text-black ${active ? '' : 'bg-[#06233622] '}`} />
+                    <button className={`absolute top-4 text-[#7d7d7d] text-2xl  h-5  lg:right-3 md:right-1  ${active ? '' : 'text-[#bebdbd]'}`}><IoSearchOutline/></button>
 
                 </div>
                 <div className="md:hidden absolute top-0 right-0 h-full  w-[65%] pr-2">
@@ -70,11 +70,11 @@ const Navbar = () => {
                 </div>
                 <div className=" lg:flex items-center justify-end invisible md:visible">
 
-                    <nav className={`flex items-center list-none gap-5 ${active ? '' : 'text-[#062336]'}`}>
+                    <nav className={`flex items-center h-full list-none lg:gap-5 md:gap-2 ${active ? '' : 'text-[#062336]'}`}>
                         <li>Home</li>
                         <li>About</li>
                         <li>Pages</li>
-                        <li className={` px-4 py-2 ${active ? 'text-black bg-white' : 'bg-[#335da5] text-white'}`}>Contacts</li>
+                        <li className={` lg:px-4 lg:py-2  ${active ? 'text-black bg-white' : 'bg-[#335da5] text-white'}`}>Contacts</li>
                     </nav>
                 </div>
             </div>

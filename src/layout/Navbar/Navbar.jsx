@@ -4,7 +4,7 @@ import { IoLogoYoutube } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
-import { IoSearchCircleOutline } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
 
 const Navbar = () => {
     const [active, setActive] = useState(true);
@@ -57,14 +57,14 @@ const Navbar = () => {
                     <h1 className={`md:text-2xl font-bold ${active ? '' : 'text-[#062336]'}`}>Penguin</h1>
                 </div>
                 <div className={`hidden md:flex items-center w-full relative transition-all duration-500 ${active ? '' : 'opacity-0'}`}>
-                    <input required type="text" className={`w-full h-10 rounded-md  pl-4 border-none outline-none transition-all duration-500 text-black ${active ? '' : 'bg-[#06233622] '}`} />
-                    <button className="absolute top-2 text-white bg-[#335da5] h-10 rounded-r-md pl-4 pr-2 right-0">Search</button>
+                    <input required placeholder="search for a user" type="text" className={`w-full h-10 rounded-md  pl-4 border-none outline-none transition-all duration-500 text-black ${active ? '' : 'bg-[#06233622] '}`} />
+                    <button className={`absolute top-4 text-[#7d7d7d] text-2xl  h-5  right-3 ${active ? '' : 'text-[#bebdbd]'}`}><IoSearchOutline/></button>
 
                 </div>
                 <div className="md:hidden absolute top-0 right-0 h-full  w-[65%] pr-2">
                     <div className=" h-full  flex items-center">
                         <input required type="text" className={`w-full h-[60%] rounded-md  pl-4  border-none outline-none transition-all duration-500 text-black ${active ? '' : 'bg-[#062336] '}`} />
-                        <button className={`absolute top-4 text-black text-2xl  h-5  right-3 ${active ? '' : 'text-white'}`}><IoSearchCircleOutline/></button>
+                        <button className={`absolute top-4 text-black text-2xl  h-5  right-3 ${active ? '' : 'text-white'}`}><IoSearchOutline/></button>
 
                     </div>
                 </div>

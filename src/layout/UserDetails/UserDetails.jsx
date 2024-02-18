@@ -28,7 +28,7 @@ const UserDetails = () => {
                         <Link to={'/'} className="absolute z-50 md:top-5 -top-5 md:right-5 right-0 text-white"><ImCross /></Link>
                         <div className="">
                             <img className="absolute -top-10 left-[calc(50%-40px)] bg-[#062336] rounded-full p-3 w-20 h-20" src={image} alt="" />
-                            <h1 className=" relative text-center top-12 md:w-[20%] w-1/2 rounded-md mx-auto bg-white  text-[#062336]"><span className="font-extrabold">User ID:</span> {username}</h1>
+                            <h1 className=" relative text-center top-12 md:w-[30%] lg:w-[20%] w-1/2 text-xs md:text-base rounded-md mx-auto bg-white  text-[#062336]"><span className="font-extrabold">User ID:</span> {username}</h1>
                         </div>
                         <div className="h-full  w-full absolute top-0 ">
                             <div className=" w-full lg:h-[calc(100%-80px)] mt-20  grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0 rounded-b-md">

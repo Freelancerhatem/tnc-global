@@ -21,6 +21,15 @@ This project focuses on enhancing the user interface and responsiveness of the p
 
 5. **AOS Animation**
    - Implemented AOS animation to add a dynamic and engaging element to the user interface.
+6. **Full Responsive Sidebar**
+   - Added a fully responsive sidebar for improved navigation and user experience.
+
+7. **Lottie Animation**
+   - Integrated Lottie animation to enhance visual appeal and interactivity.
+
+8. **About Section with Site Statistics**
+   - Introduced an 'About' section providing insights and statistics about the site's performance and usage.
+
 
 ## Live Site
 
